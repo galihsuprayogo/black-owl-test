@@ -21,10 +21,10 @@ const HeroCard = () => {
           <div className='flex w-full flex-col space-y-4'>
             <div className='flex w-full flex-row items-start justify-between'>
               <div className='flex flex-col space-y-2'>
-                <span className='font-poppins text-netral-900 text-3xl font-extrabold'>
+                <span className='font-poppins text-3xl font-extrabold text-netral-900'>
                   Choose Your
                 </span>
-                <span className='font-poppins text-primariy-main text-3xl font-extrabold'>
+                <span className='font-poppins text-3xl font-extrabold text-primariy-main'>
                   Place
                 </span>
               </div>
@@ -34,14 +34,19 @@ const HeroCard = () => {
                 color: '#757575',
               })}
             </div>
-            <span className='font-poppins text-netral-900 text-base font-normal'>
+            <span className='font-poppins text-base font-normal text-netral-900'>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
               incididunt ut labore et dolore magna
             </span>
           </div>
           <div className='flex w-full flex-col space-y-3'>
             {locations.map((item, index) => (
-              <Link key={index} href='#' target='_top' className='hover:cursor-pointer'>
+              <Link
+                key={index}
+                href='/booking/event'
+                target='_top'
+                className='hover:cursor-pointer'
+              >
                 <Image
                   src={`${item.url}`}
                   alt={`${item.location}`}
@@ -55,6 +60,12 @@ const HeroCard = () => {
               </Link>
             ))}
           </div>
+          <span className='pt-1 font-poppins text-sm font-normal tracking-wide text-netral-900'>
+            {`Read our `}
+            <span className='font-poppins text-sm font-normal text-[#3267E3]'>
+              Terms & Condition, Privacy Policy
+            </span>
+          </span>
         </CardBody>
       </Card>
     </Card>
