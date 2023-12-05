@@ -42,7 +42,7 @@ const Nav = (props: {
       <Navbar
         variant='filled'
         color='transparent'
-        className='sticky inset-0 z-10 min-w-full rounded-none border-none bg-black px-2 py-3 shadow-sm shadow-gray-900 md:px-8'
+        className='sticky inset-0 z-10 min-w-full rounded-none border-none bg-black px-2 py-2 shadow-sm shadow-gray-900 md:px-8'
       >
         <div className='text-blue-gray-900 flex items-center justify-between'>
           <Link
